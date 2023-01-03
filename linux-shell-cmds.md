@@ -10,5 +10,7 @@
 
 
 -w wordlists path
+
 -u ip domain ex https://google.com
+
 -H host
