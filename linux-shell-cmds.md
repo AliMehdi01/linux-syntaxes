@@ -13,7 +13,7 @@
 
 -u url ex https://google.com
 
--H host
+-H host/header
 
 -fs switch, which tells ffuf to ignore any results that are of the specified size.
 
@@ -33,5 +33,8 @@
     curl 'http://10.10.54.22/customers/reset?email=robert%40acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert'
     curl 'http://10.10.54.22/customers/reset?email=robert%40acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert&email=attacker@hacker.com'
     curl -H "Cookie: logged_in=true; admin=true" http://MACHINE_IP/cookie-test
+    
+ #Nmap
+    nmap -sV -sC -A http//ip/ oN output.txt
     
     
