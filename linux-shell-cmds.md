@@ -35,6 +35,6 @@
     curl -H "Cookie: logged_in=true; admin=true" http://MACHINE_IP/cookie-test
     
  # Nmap
-    nmap -sV -sC -A http//ip/ oN output.txt
+    nmap -sV -sC -A http//ip/ -oN output.txt
     
     
