@@ -52,6 +52,13 @@
     get filename
     
 # netcat
+
+reverse shell ports(443,53,80)
+
+the first syntax is for reverse shell
+
+the seceond one is for bind shell
+
     nc -lvnp <port-number>
     nc <target-ip> <chosen-port>
     
@@ -62,3 +69,7 @@
 -n tells netcat not to resolve host names or use DNS. Explaining this is outwith the scope of the room.
 
 -p indicates that the port specification will follow.
+
+@ making the shell stable
+
+    python -c 'import pty;pty.spawn("/bin/bash")'
