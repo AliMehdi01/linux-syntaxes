@@ -72,10 +72,18 @@ the seceond one is for bind shell
 
    **(---**making the shell stable**---)**
    
-   Technique 1: Python
+  **Technique 1: Python**
 
     python -c 'import pty;pty.spawn("/bin/bash")'
     export TERM=xterm
     stty raw -echo; fg
+   
+ fg is use to rerive that termial that we push in the background
+ 
+ and Ctrl + Z push them in the background
 
 ![nc](https://user-images.githubusercontent.com/98187755/212935020-c11aea4e-611a-47df-9673-1fe87c8b4fe8.png)
+
+**Technique 2: rlwrap**
+
+
