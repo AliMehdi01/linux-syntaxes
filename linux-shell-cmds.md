@@ -70,6 +70,7 @@ the seceond one is for bind shell
 
 -p indicates that the port specification will follow.
 
-@ making the shell stable
+   making the shell stable
 
     python -c 'import pty;pty.spawn("/bin/bash")'
+    export TERM=xterm
