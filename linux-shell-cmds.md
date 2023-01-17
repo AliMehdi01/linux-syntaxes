@@ -74,3 +74,5 @@ the seceond one is for bind shell
 
     python -c 'import pty;pty.spawn("/bin/bash")'
     export TERM=xterm
+
+![nc](https://user-images.githubusercontent.com/98187755/212935020-c11aea4e-611a-47df-9673-1fe87c8b4fe8.png)
