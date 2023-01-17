@@ -70,9 +70,12 @@ the seceond one is for bind shell
 
 -p indicates that the port specification will follow.
 
-   making the shell stable
+   **(---**making the shell stable**---)**
+   
+   Technique 1: Python
 
     python -c 'import pty;pty.spawn("/bin/bash")'
     export TERM=xterm
+    stty raw -echo; fg
 
 ![nc](https://user-images.githubusercontent.com/98187755/212935020-c11aea4e-611a-47df-9673-1fe87c8b4fe8.png)
