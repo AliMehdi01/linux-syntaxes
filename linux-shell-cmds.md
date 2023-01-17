@@ -43,10 +43,16 @@
 # SU
     switch user: su - username 
     sudo su username
+    
+ ****SU**** **superuser**
 # history
   
     history -d <line number>
     history -c
+    
+**-c** is for clearing all
+**-d** line by line
+
 # ftp(file transfer protocol)
     ftp ip
     get filename
