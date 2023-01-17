@@ -40,13 +40,13 @@
     
 # SSH
     ssh username@ip
-  
-  
 # SU
     switch user: su - username 
     sudo su username
+# history
   
-  
+    history -d <line number>
+    history -c
 # ftp(file transfer protocol)
     ftp ip
     get filename
