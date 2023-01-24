@@ -95,5 +95,9 @@ the seceond one is for bind shell
     sudo apt install rlwrap
     rlwrap nc -lvnp <port>
     
-This technique is particularly useful when dealing with Windows shells, which are otherwise notoriously difficult to stabilise. When dealing with a Linux target, it's possible to completely stabilise, by using the same trick as in step three of the previous technique: background the shell with Ctrl + Z, then use stty '''raw -echo; fg''' to stabilise and re-enter the shell.
+This technique is particularly useful when dealing with Windows shells, which are otherwise notoriously difficult to stabilise. When dealing with a Linux target, it's possible to completely stabilise, by using the same trick as in step three of the previous technique: background the shell with Ctrl + Z, then use 
+
+    '''stty raw -echo; fg''' 
+
+to stabilise and re-enter the shell.
 
